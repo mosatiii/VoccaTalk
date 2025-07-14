@@ -20,29 +20,21 @@ The application consists of a simple frontend and a Python backend:
     4.  Receives the response from the LLM.
     5.  (Optional) Uses a text-to-speech (TTS) engine to convert the response to audio and plays it.
 
-## Setup
+## Setup & Run
 
-1.  **Install Dependencies:**
+Simply run the `run.sh` script:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+./run.sh
+```
 
-2.  **Download Models:**
+The first time you run it, the script will automatically:
 
-    This application requires a speech-to-text (STT) model and a large language model (LLM). See the instructions in `models/README.md` for downloading the default models.
+1.  Install the required Python dependencies.
+2.  Download the necessary STT and LLM models.
+3.  Create a default `config.yaml` file.
 
-3.  **Configure Models:**
-
-    Update the `backend/config.yaml` file with the correct paths to your downloaded models.
-
-4.  **Run the Application:**
-
-    ```bash
-    ./run.sh
-    ```
-
-    This will start the backend server. You can then open the `ui/index.html` file in your web browser to use the application.
+After the initial setup, the script will start the backend server. You can then open the `ui/index.html` file in your web browser to use the application.
 
 ## Configuration
 
