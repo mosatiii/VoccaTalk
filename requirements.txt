@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+python-multipart
+whisper-cpp-python
+llama-cpp-python
+pyttsx3

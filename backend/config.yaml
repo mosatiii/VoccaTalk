@@ -1,0 +1,12 @@
+stt:
+  model_path: "../models/whisper.cpp/ggml-base.en.bin"
+
+llm:
+  model_path: "../models/Meta-Llama-3-8B-Instruct-GGUF/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf"
+  n_gpu_layers: -1 # -1 to offload all layers to GPU
+
+tts:
+  enabled: true
+
+server:
+  port: 8000
